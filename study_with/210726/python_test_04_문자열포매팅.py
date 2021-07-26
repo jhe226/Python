@@ -16,7 +16,7 @@ I eat 5 apples.  --> f 문자열 포매팅 형식
 
 n = 5
 
-print('I eat', n, 'apples.')
+print('I eat %d apples.' %n)
 print('I eat {} apples.'.format(n))
 print(f'I eat {n} apples.')
 
