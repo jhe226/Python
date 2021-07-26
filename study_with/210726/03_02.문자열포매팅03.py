@@ -8,7 +8,7 @@ name = '라이언'
 age = 20
 
 print(f'나의 이름은 {name}입니다. 나이는 {age}살입니다.')
-print(f'나는 내년이면 {age+1}살이 됩니다.'.format(age))
+print('나는 내년이면 {age+1}살이 됩니다.'.format(age))
 print()
 
 print(f'{"Hi":=^30}')   # 전체 30칸, 공백 : =, 가운데 정렬
