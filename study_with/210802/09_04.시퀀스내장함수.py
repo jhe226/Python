@@ -50,7 +50,7 @@ avg = total // len(score)
 print('평균 :', avg)
 print()
 
-# zip() : 
+# zip() : 튜플로 
 names = ['james', 'David', 'Emily']
 scores = [60, 70, 80]
 for student in zip(names, scores):
