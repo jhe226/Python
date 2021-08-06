@@ -1,6 +1,0 @@
-Hello
-World!
-Python
-Learning
-LoL
-파이썬을 공부해봅시다.
