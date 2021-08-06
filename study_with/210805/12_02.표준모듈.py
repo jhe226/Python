@@ -77,7 +77,7 @@ print()
 # ex) 모듈과 조건문을 이용한 계절 구하기
 import datetime
 
-now = datetime.now()    # pc로 부터 현재 날짜, 시간 추출
+now = datetime.datetime.now()    # pc로 부터 현재 날짜, 시간 추출
 m = now.month   # 추출한 현재 날짜 시간 변수의 월만 따로 저장
 
 if 3 <= m <= 5: # 만약 월이 3, 4, 5월이라면
@@ -102,7 +102,7 @@ input('10초 후 다시 엔터를 누르세요.')
 end = time.time()
 
 elapse = end - start
-print(f'실제 시간 :{}')
+print(f'실제 시간 :{elapse}')
 print(f'차이 :{abs(elapse-10)}초')  # abs() : 절댓값
 
 
