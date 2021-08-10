@@ -64,20 +64,28 @@ print()
 # p.g 271
 # 03.
 class Singer :
-    def set_song(self, song, genre):
-        self.song = song
-        self.genre = genre
     def set_singer(self, singer):
         self.singer = singer
     def hit_song(self, hit):
         self.hit = hit
-    def print_singer(self, singer, hit):
-        print('가수이름 : {}\n노래제목 : {}({})'.format(self.singer, self.song, self.genre))
+    def print_singer(self):
+        print('가수이름 : {}'.format(self.singer))
 
-s = Song()
-s.set_song('취중진담','발라드')
-s.set_singer('김동률')
-s.set_hit(song)
+class Song:
+    def set_song(self, song, genre):
+        self.song = song
+        self.genre = genre
+    def print_song(self):
+        print('노래제목 : {}({})'.format(self.song, self.genre))
+
+
+song = Song()
+song.set_song('취중진담', '발라드')
+singer = Singer()
+singer.set_singer('김동률')
+singer.hit_song(song)
 singer.print_singer()
+song.print_song()
+print()
 
         
