@@ -58,8 +58,13 @@ print()
      부모 클래스의 메서드 대신 오버라이딩(덮어쓰기)한 메소드가 호출된다
      프로그램에서 어떤 기능이 같은 메소드 이름으로 계속 사용되어야 할 때 활용
 '''
-class Car:
-     def __init__():
+class Car: # 부모클래스(슈퍼클래스)
+     def __init__(self, speed): # 생성자
+           self.speed = speed
+
+    def upSpeed(self, value): # 인스턴스 메서드
+        self.speed += value
+        print(f'현재 속도(부모 클래스) : {self.speed}')
           
 class Sedan(Car) :       # 서브 클래스
      def __init__(self, speed, name):
